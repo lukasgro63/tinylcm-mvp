@@ -1,0 +1,59 @@
+%!TEX root = thesis.tex
+
+% The titlepage for the thesis report document.
+% Included by MAIN.TEX
+
+
+%--------------------------------------------------
+% The title page
+%--------------------------------------------------
+
+% correct BCOR - undo at the end !!!
+\def\bcorcor{0.15cm}
+\addtolength{\hoffset}{\bcorcor}
+
+\thispagestyle{empty}
+
+ \vspace{10mm}
+\begin{center}
+	 \includegraphics[width=9cm]{figs/hhz-logo.pdf}
+	   	   
+	 \vspace{5mm}     
+ 	 %% not needed for HSR/HHZ
+	 %%\huge \textsc{\university}\\ 
+	 %%\vspace{1.5cm}
+
+	 \Large \faculty\\
+ 	 %% not needed for HSR/HHZ
+	 %%\Large \chair\\
+\end{center}
+		
+
+\vspace{10mm}
+\begin{center}
+
+  {\Large \doctype}
+  
+  \vspace{20mm}
+  
+  {\Large \bf \title}\\
+  
+  
+  \vfill
+
+    %\hfill
+    \begin{tabular}{ll}
+	   \large Submitted by:			& \large \author			\\
+	   \large Student Id:				& \large \studId			\\[2mm]
+	   \large 1$^{\text{st}}$ Examiner:	& \large \firstSupervisor		\\[2mm]				
+	   \large 2$^{\text{nd}}$ Examiner:	& \large \secondSupervisor	\\[2mm]				
+	   \large Hand-In Date:			& \large \handindate
+	 \end{tabular}
+	 
+	 \vspace{5mm}
+	   
+
+\end{center}
+
+% undo BCOR correction
+\addtolength{\hoffset}{\bcorcor}

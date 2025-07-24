@@ -1,0 +1,18 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Motivation and Design Rationale}{\reset@font\mtcSfont 44}{section.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.1}Revisiting Research Gaps and Limitations}{\reset@font\mtcSSfont 44}{subsection.5.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.2}Objectives and Core Tenets for the Ecosystem}{\reset@font\mtcSSfont 44}{subsection.5.1.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}System Requirements and Architectural Vision}{\reset@font\mtcSfont 45}{section.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.1}Functional and Non-Functional Requirements}{\reset@font\mtcSSfont 45}{subsection.5.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.2}Overall Ecosystem Architecture}{\reset@font\mtcSSfont 45}{subsection.5.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}TinyLCM On-Device Framework for Autonomous Lifecycle Management}{\reset@font\mtcSfont 47}{section.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.1}Architectural Blueprint and Core Components}{\reset@font\mtcSSfont 48}{subsection.5.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.2}Lightweight KNN Classifier}{\reset@font\mtcSSfont 49}{subsection.5.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.3}Autonomous Drift Detection and Adaptation Mechanisms}{\reset@font\mtcSSfont 51}{subsection.5.3.3}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \nonumberline KNN-Distance Monitoring with Page-Hinkley Test}{\reset@font\mtcPfont 51}{paragraph*.57}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \nonumberline Heuristic Pseudo-Labeling and Quarantine}{\reset@font\mtcPfont 53}{paragraph*.59}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \nonumberline State Management for Resilience}{\reset@font\mtcPfont 54}{paragraph*.62}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}TinySphere: A TinyML-Centric Server Platform for Enhanced MLOps}{\reset@font\mtcSfont 55}{section.5.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.1}Rationale and Objectives for a TinyML-Centric MLOps Platform}{\reset@font\mtcSSfont 55}{subsection.5.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.2}Architectural Design of TinySphere}{\reset@font\mtcSSfont 56}{subsection.5.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.3}Key MLOps Capabilities Provided by TinySphere}{\reset@font\mtcSSfont 57}{subsection.5.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Exemplary Operational Workflow}{\reset@font\mtcSfont 59}{section.5.5}}

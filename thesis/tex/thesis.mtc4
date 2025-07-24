@@ -1,0 +1,24 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}General Analysis of the Literature Corpus}{\reset@font\mtcSfont 22}{section.4.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Quantitative Findings from Primary Studies}{\reset@font\mtcSfont 22}{section.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Research and Contribution Type}{\reset@font\mtcSSfont 23}{subsection.4.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}Hardware Platforms and Runtime Environments}{\reset@font\mtcSSfont 23}{subsection.4.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.3}AI Use Cases and Data Modalities}{\reset@font\mtcSSfont 24}{subsection.4.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.4}System Architecture Patterns}{\reset@font\mtcSSfont 26}{subsection.4.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.5}Model Training and Lifecycle Management}{\reset@font\mtcSSfont 26}{subsection.4.2.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Mapping Studies of Interdependencies}{\reset@font\mtcSfont 28}{section.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.1}Interplay of Architecture, Hardware, and Model Training}{\reset@font\mtcSSfont 28}{subsection.4.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.2}Interplay of Architecture, Training, and Model Management}{\reset@font\mtcSSfont 29}{subsection.4.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.3}Interplay of Management, Learning, and Monitoring}{\reset@font\mtcSSfont 31}{subsection.4.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.4}Interplay of CI/CD, Training, and Optimization}{\reset@font\mtcSSfont 32}{subsection.4.3.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.5}Mapping Hardware Platforms to AI Use Cases}{\reset@font\mtcSSfont 34}{subsection.4.3.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}System Architectures in TinyML}{\reset@font\mtcSfont 35}{section.4.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.1}Centralized and Hybrid Architectural Models}{\reset@font\mtcSSfont 37}{subsection.4.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.2}Decentralized and Edge-Native Architectural Models}{\reset@font\mtcSSfont 37}{subsection.4.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.5}Frameworks and Tools for On-Device MLOps}{\reset@font\mtcSfont 38}{section.4.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.1}Identified Frameworks for Decentralized On-Device MLOps}{\reset@font\mtcSSfont 38}{subsection.4.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.2}Commonly Utilized Standard Tools and Libraries}{\reset@font\mtcSSfont 40}{subsection.4.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.3}Core Contributions and Strategies for Decentralized MLOps}{\reset@font\mtcSSfont 40}{subsection.4.5.3}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \nonumberline End-to-End Platforms and Orchestration Frameworks}{\reset@font\mtcPfont 40}{paragraph*.47}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \nonumberline Enabling On-Device Intelligence: Learning, Adaptation, and Optimization}{\reset@font\mtcPfont 41}{paragraph*.49}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \nonumberline Deployment, Operational Management, and System Resilience}{\reset@font\mtcPfont 41}{paragraph*.51}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.6}Concluding Synthesis of Research Findings}{\reset@font\mtcSfont 41}{section.4.6}}

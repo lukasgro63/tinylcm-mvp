@@ -1,0 +1,13 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.1}Evaluating the TinyMLOps Ecosystem}{\reset@font\mtcSfont 74}{section.7.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.1.1}Philosophy and Architectural Design}{\reset@font\mtcSSfont 74}{subsection.7.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.1.2}Effectiveness in Key Lifecycle Management Phases}{\reset@font\mtcSSfont 74}{subsection.7.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.1.3}Comparison with Existing TinyMLOps Solutions}{\reset@font\mtcSSfont 75}{subsection.7.1.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.2}Critical Examination of Research Findings}{\reset@font\mtcSfont 75}{section.7.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.2.1}Addressing the Research Questions}{\reset@font\mtcSSfont 75}{subsection.7.2.1}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \nonumberline RQ1: What system architectures, methodologies, and practices are employed to support \gls {tinyml} in resource-constrained embedded systems?}{\reset@font\mtcPfont 75}{paragraph*.81}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \nonumberline RQ2: Which frameworks and strategies facilitate decentralized on-device \gls {mlops} while minimizing reliance on cloud infrastructure?}{\reset@font\mtcPfont 76}{paragraph*.83}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \nonumberline RQ3: How can a \gls {tinymlops} framework be designed to enable effective on-device model \gls {lcm} in resource-constrained systems?}{\reset@font\mtcPfont 76}{paragraph*.85}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \nonumberline RQ4: How does deploying on-device TinyMLOps in decentralized embedded systems influence deployment complexity, resource consumption, and performance trade-offs?}{\reset@font\mtcPfont 76}{paragraph*.87}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.2.2}Significance of the Findings}{\reset@font\mtcSSfont 77}{subsection.7.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.2.3}Comparison with Broader Literature and Framework Claims}{\reset@font\mtcSSfont 77}{subsection.7.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.3}Limitations of the Research}{\reset@font\mtcSfont 78}{section.7.3}}

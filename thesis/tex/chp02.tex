@@ -1,0 +1,146 @@
+%!TEX root = thesis.tex
+
+\chapter{Working with the Template}
+\label{chp:TheTemplate}
+In this chapter, you get introduced into handling the template. The purpose of this chapter is to guide you through the basic processes to fill out the necessary template parameters and to set up the Thesis organization. Having complete few initial setup tasks, you can immediately start writing your text.
+
+Moreover, right here you can see how the main chapters of your Thesis should be organized. Every main or contributing chapter starts with a ``chapter introduction page'' (all but the first and the last chapter) This page includes the chapter summary and a so-called chapter TOC (table of contents). This structure aims at giving the reader a quick overview of the chapter; what is in, why should I read this chapter\ldots
+
+~\\
+\vfill
+\minitoc
+\clearpage
+
+
+\section{Chapter Overview}
+\label{sec:2:ChapterOverview}
+As mentioned in the chapter overview, every contributing chapter (usually starting with chapter 2) shall provide support for the reader by providing information regarding the chapter. For this, the start of every contributing chapter is defined as shown in Listing~\ref{lst:ChapterCode}
+\begin{lstlisting}[captionpos=b, language=TeX, commentstyle=\color{blue}\itshape, caption=Listing for generating the chapter overview,label=lst:ChapterCode]
+\chapter{Working with the Template}
+\label{chp:TheTemplate}
+In this chapter, you get introduced into handling the template.
+
+~\\
+\vfill
+\minitoc
+\clearpage
+\end{lstlisting}
+
+This code generates the chapter abstract followed by a \kw{minitoc} environment in which the chapter outline is illustrated. This has some consequences: First, you should provide a meaningful chapter abstract, which means that you provide the reader with a ``real'' abstract in which you state:
+\begin{compactitem}
+	\item What is the context of the chapter?
+	\item What is the problem addressed?
+	\item What is the outcome of this chapter?
+	\item (optional) What to find where\ldots
+\end{compactitem}
+Finally, keep the chapter abstract short. Try to limit the abstract to 200-250 words.
+
+
+
+\section{Configure the Template}
+\label{sec:2:ConfigureTheTemplate}
+The configuration of the template is quite easy and requires just a few steps:
+\begin{compactenum}
+	\item Insert the Thesis metadata
+	\item Write the text
+	\item Create the summaries
+\end{compactenum}
+
+\paragraph{Thesis Metadata}
+All metadata to configure the Thesis and to generate, e.g., the cover and title pages, is contained in the main file of the Thesis project: \kw{thesis.tex}. The metadata serve two purposes. First, they are used to configure the title and cover pages. Furthermore, the metadata is used to also compile appropriate information into the final PDF file.
+
+All entries are documented and, thus, should be self-explaining (Listing~\ref{lst:metadata}):
+
+\begin{lstlisting}[captionpos=b, language=TeX, commentstyle=\color{blue}\itshape, caption=Metadata for the Thesis (PDF and document information),label=lst:metadata]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% These are the variables to configure the produced PDF file. Please
+%% fill them out properly.
+\def\university {Reutlingen University}	%% name the university here
+					%% and, also name the faculty
+\def\faculty {School of Informatics | Herman Hollerith Center}	
+\def\titelname {Name}			%% name of the PDF document; in
+					%% in the simple case, just use
+					%% the thesis's title
+\def\autorforinfo {Name}		%% name of the author of this document
+\def\studentid{StudentId}		%% provide your Student Id
+\def\email {name@domain.com}		%% your e-mail address
+\def\subjectname {subject}		%% please indicate, what the
+					%% general area of your work is
+\def\keywordsname {keyword1, kw2, kw3}	%% add a comma-separated list of
+					%% of keywords to help document indexing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Specific variables for the Thesis:
+
+% What is the thesis's type, BSc, MSc, etc.; don't forget the subject...
+% For example, if you are going to write a Bachelor Thesis in DIB, just use the 
+% specification below. If you are doing a Masters Thesis, e.g., in DBE, just 
+% change the line below accordingly...
+\def\doctype{Bachelor Thesis in Digital Business}
+%  What is the title of the thesis?
+\def\title{Demonstration of the Thesis Template for BSc and MSc Reports}
+%  Who are you?
+\def\author{Name Author}
+\def\studId{123456}
+%  What is the hand-in date of the thesis?
+\def\handindate{December 31, 2024}
+%  Who is supervising you?
+\def\firstSupervisor{Prof. Dr. ??}
+\def\secondSupervisor{Prof. Dr. ??}
+ 
+\end{lstlisting}
+
+Please also note that with the emerging AI tools, the university requires you to provide a statement about the utilization of those tools in your work. For this, the main file contains a set of options that you need to choose from. Listing~\ref{lst:aiOptions} provides an overview of these options, which are automatically generated in the statement of independent work\footnote{The statement of independent work has been devised in accordance with the statutes of the Reutlingen University. The university’s regulations regarding plagiarism are provided in §13 of the General Study and Examination Regulations for Bachelor’s and Master’s Degree Programmes at Reutlingen University:\\ \url{https://www.reutlingen-university.de/fileadmin/University/Hochschule/Downloads/Studien-\_und\_Pruefungsordnungen/Allgemein/StuPro\_AllgemTeil\_Englisch.pdf}}.
+\begin{lstlisting}[captionpos=b, language=TeX, commentstyle=\color{blue}\itshape, caption=Options to characterize the use of AI tools in the thesis,label=lst:aiOptions]
+%% Selection of the AI utilization in this thesis: From the following three 
+%% options, select this one that applies. Use the comment function to 
+%% enable the required option and to disable those options that don't apply
+
+% Option 1: No use of AI tools. 
+%\def\AIToolsUse{I also confirm that I have not used any AI-based, content-generating tools.}
+
+% Option 2: Mandatory labeling of AI tools with permitted use 
+\def\AIToolsUse{I also confirm that the use of AI tools has been explicitly permitted by the examiner and that I have made use of them in my work. The AI tools used are attached to the thesis in accordance with the faculty's internal citation and documentation requirements. I only used content-generating AI tools for support and did not let the AI take over the core theses of my work. I am aware that the use of AI tools does not guarantee accuracy and that I am responsible for all AI-generated content in this thesis.}
+
+% Option 3: Permission of content-generating AI tools without mandatory labeling 
+%\def\AIToolsUse{I also confirm that I have only used content-generating AI tools in a supportive manner and have not allowed the AI to take over the core theses of my work. I am aware that the use of AI tools does not guarantee accuracy and that I am responsible for all AI-generated content in this thesis.}
+ 
+\end{lstlisting}
+
+\paragraph{Write the Text}
+This is the major task of the Thesis project, as the submitted report is the one thing that counts. To write the text, here are some basic (technical) advices:
+\begin{itemize}
+	\item Start writing early! Implement a ``shitty first draft'' approach to write your text.
+	\item Design and organize the Thesis. This means that you start early to create a general outline of the report. The recommendation is to create one \TeX-file per chapter. The file \kw{thesis.tex} defines a hotspot, which you just extend with your chapters.
+	\item If you have special requirements regarding terminology or specific terms that are frequently used, use \emph{semantic markup}, which is a tool to define user-defined commands or placeholders. In the files \kw{commands.tex} and \kw{shortcuts.tex}, you can find plenty of examples.
+\end{itemize}
+While writing your text, it is important to concentrate on the content. \LaTeX\ is sometimes somewhat tricky. Don't be trapped by trying to solve every type-setting-related problem immediately. Get your text finished first, and handle the layout-related stuff later.
+
+\begin{MySugg}
+	This is technical advice. More methodical help is provided in Chapter~\ref{chp:MethodicalAdvice}.
+\end{MySugg}
+
+
+\paragraph{Create the Summaries}
+Finally, when it comes to the Thesis submission, there are several more text snippets that you need to provide.
+
+First of all, the abstract. The file \kw{abstract.tex} contains the abstract of the overall Thesis. Try to keep it short but informative. Don't forget, the abstract is the teaser of the Thesis and, thus, should contain proper information regarding the context, the addressed problem, the overall objective, and achieved results in particular. Try to limit the abstract to 500 words. But: \emph{never} write an abstract of more than 1 page (best practice $\frac{1}{2}$ to $\frac{3}{4}$ page is optimal).
+
+If you want to thank people for their (moral, professional) support, you can place appropriate texts in the file \kw{acknowledgements.tex}.
+
+
+\section{Final Remarks}
+\label{sec:2:Finally}
+So far, we addressed the technical topics of setting up the \LaTeX\ template for a Thesis project. Using the information provided in the template and some \LaTeX\ basic knowledge, you can create a nice looking report.
+
+This template is (now) continuously used and improved for about \emph{20 years}. It was used to create hundreds of Diploma-, Bachelor-, Master's, and Ph.D.\ Theses, and we continuously improve the template every year. Feedback and improvement proposals are always appreciated. If you have questions, just drop me an e-mail.
+
+\begin{MySugg}
+	Don't forget: I have never used \LaTeX\ is no excuse anymore. This template is bootstrapped, i.e., the template generates this guideline that explains the use of the template. So, just compile the initially shipped files, read the guideline and, eventually, compare the PDF text with the respective \LaTeX\ sources. In almost all cases, you've got everything you need.
+\end{MySugg}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "thesis"
+%%% End: 

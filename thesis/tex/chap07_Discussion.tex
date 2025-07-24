@@ -1,0 +1,118 @@
+%!TEX root = thesis.tex
+
+\chapter{Discussion}
+\label{chp:Discussion}
+
+This chapter synthesises the entire study and evaluates how the proposed TinyMLOps ecosystem answers the research questions. It links the empirical results to the wider literature, discusses limitations, and outlines avenues for future work.
+
+~\\
+\vfill
+\minitoc
+\clearpage
+
+
+\section{Evaluating the TinyMLOps Ecosystem}
+\label{sec:evaluating_ecosystem}
+
+This section evaluates the effectiveness of the proposed \gls{tinymlops} ecosystem, encompassing \gls{tinylcm} and TinySphere, in enabling autonomous \gls{lcm}. This evaluation directly addresses the RQ3. The discussion will focus on the ecosystem's design philosophy, its architectural contributions to autonomous operations, its effectiveness across key \gls{lcm} phases, and a comparative analysis against existing solutions.
+
+\subsection{Philosophy and Architectural Design}
+\label{ssec:autonomy_first_philosophy}
+
+A central design principle is the ``autonomy-first'' philosophy: the on-device component, \gls{tinylcm}, holds the primary intelligence for managing the model lifecycle.  
+This mitigates the cloud-dependency seen in many \gls{tinyml} deployments and is essential for intermittently connected scenarios such as the Mars-rover case study.  \gls{tinylcm} therefore follows a data-centric pipeline with modular blocks for feature extraction, unsupervised drift detection (\texttt{KNNDistanceMonitor}), lightweight classification (\texttt{LightweightKNN}), and robust state management (\texttt{AdaptiveStateManager}).  The successful validation of autonomous drift detection confirms this approach.
+  
+While \gls{tinylcm} champions on-device self-sufficiency, the ecosystem design pragmatically acknowledges that certain advanced \gls{mlops} capabilities are impractical or overly resource-intensive for isolated, constrained devices. The TinySphere platform serves as an optional, server-side complement, designed to provide these enhanced functionalities without undermining \gls{tinylcm}'s core operational autonomy. This addresses the need for more powerful \gls{mlops} tools, a requirement often met by cloud services in existing literature \cite{banburyEdgeImpulseMLOps2023,alselekAgileAIFirmware2024}. The interaction between \gls{tinylcm} and TinySphere is governed by an opportunistic client-server model, where \gls{tinylcm} functions independently and attempts server communication only when connectivity is available and such interaction is deemed beneficial.
+
+This dual-component architecture, balancing maximal on-device autonomy with optional centralized support, represents a pragmatic approach rather than a compromise. Purely autonomy for all conceivable \gls{mlops} tasks remains a formidable challenge, particularly under severe resource constraints. The literature review in Chapter~\ref{chp:Research_Results} indicated that many existing edge systems still maintain dependencies on cloud components for significant operational aspects. The proposed ecosystem's architecture, by offering a spectrum of operational modes, provides a flexible solution. It allows deployments to function effectively in completely disconnected environments, while also enabling them to leverage richer, server-assisted \gls{mlops} capabilities when connectivity permits. This adaptability makes the ecosystem potentially suitable for a broader range of use cases compared to solutions that are either exclusively device-centric or heavily reliant on continuous cloud integration.
+
+\subsection{Effectiveness in Key Lifecycle Management Phases}
+\label{ssec:effectiveness_lcm_phases}
+
+The proposed \gls{tinymlops} ecosystem aims to support multiple phases of the \gls{ml} model lifecycle autonomously on the edge device.
+
+\textbf{Deployment}\quad
+While the primary focus of \gls{tinylcm} is on post-deployment \gls{lcm}, its initial setup and configuration, as detailed in Phase 2 of the exemplary operational workflow (Section~\ref{ssec:ecosystem_workflow} in Chapter~\ref{chp:Framework}), facilitate the deployment of an autonomous operational agent on the target device. The provision of configuration files and initial state artifacts allows for a structured instantiation of the \gls{tinylcm} pipeline. 
+
+\textbf{Monitoring} \quad
+A cornerstone of \gls{tinylcm}'s autonomous capabilities is its unsupervised drift detection mechanism. The \texttt{KNNDistanceMonitor}, employing the Page-Hinkley statistical test on  \gls{knn} distances within a PCA-transformed feature space, enables continuous monitoring for concept drift without requiring ground truth labels. The empirical evaluation in Chapter~\ref{chp:Evaluation} successfully validated this capability, demonstrating its functional efficacy in controlled laboratory settings. This is particularly significant for \gls{tinyml} scenarios where real-time, labeled data streams are often unavailable, a challenge highlighted in the framework design. 
+
+\textbf{Adaptation} \quad
+On-device adaptation is conceptually in place—an \texttt{HeuristicAdapter} quarantines anomalous samples, pseudo-labels them, and (optional after expert validation via TinySphere) updates the \texttt{LightweightKNN}.  
+
+\textbf{Rollback} \quad
+To ensure operational resilience, particularly in the context of potentially imperfect autonomous adaptations, \gls{tinylcm} incorporates the \texttt{AdaptiveStateManager}. This component is designed to version critical states, primarily the \texttt{LightweightKNN} classifier's reference set, and persist these snapshots to non-volatile storage. The use of an asynchronous worker thread for save operations, as illustrated in Chapter~\ref{chp:Framework} (Listing~\ref{lst:statemanager}), is a practical consideration, preventing the main inference pipeline from stalling. This rollback capability is vital for maintaining system stability and reliability, allowing the device to revert to a known-good state if an adaptation proves detrimental.
+
+\subsection{Comparison with Existing TinyMLOps Solutions}
+\label{ssec:comparison_existing_solutions}
+
+\Gls{tinylcm} is designed to provide an end-to-end perspective for on-device operations, covering monitoring, adaptation, and state management locally. This contrasts with many platforms that, while targeting edge deployment, still rely heavily on cloud infrastructure for core \gls{mlops} tasks like continuous monitoring or model retraining. 
+The focus on unsupervised drift detection within \gls{tinylcm} is another key differentiator. \Gls{tinylcm}'s \texttt{KNNDistanceMonitor} provides a mechanism for detecting changes in data distribution without such labels, a crucial capability for truly autonomous systems in label-scarce environments.
+
+Furthermore, the integrated nature of the \gls{tinylcm} and TinySphere ecosystem offers a unique value proposition. TinySphere is not a generic \gls{mlops} backend merely retrofitted for \gls{tinyml}; it is conceptualized as a server-side platform specifically designed to understand, interact with, and augment the autonomous operations of \gls{tinylcm}-enabled devices. This synergy—supporting opportunistic communication, facilitating validation of on-device decisions, and providing \gls{tinyml}-aware fleet management—differs from approaches that might use general-purpose tools like MLflow in isolation or platforms that offer less specialized support for the nuances of autonomous edge device operations.
+
+\section{Critical Examination of Research Findings}
+\label{sec:critical_examination_findings}
+
+This section critically examines the research findings presented throughout the thesis, synthesizing how they collectively address the posed research questions. It also discusses the broader significance of these findings and compares them against the claims made by the proposed framework and the existing body of literature.
+
+\subsection{Addressing the Research Questions}
+\label{ssec:addressing_rqs}
+
+The research was structured around four key questions, and the findings from various chapters contribute to answering them in an interconnected manner, reflecting the iterative nature of the \gls{dsr} methodology employed.
+
+\paragraph{RQ1: What system architectures, methodologies, and practices are employed to support \gls{tinyml} in resource-constrained embedded systems?}
+This question was primarily addressed by the systematic literature analysis presented in Chapter~\ref{chp:Research_Results}. The findings revealed a predominance of Data-Centric and Client-Server architectural patterns. Methodologically, Centralized Training and Offline Learning for statically pre-trained models were common, though an increasing interest in decentralized and on-device learning was noted. Common hardware platforms often included more capable \glspl{mcu} and \glspl{sbc} for tasks like sensor-based analysis, computer vision, and audio processing. Findings are highlighted in Chapter~\ref{chp:Research_Results} (\ref{sec:RQ1_Results_SystemArchitecture}) These insights directly informed the design choices for the proposed ecosystem: \gls{tinylcm} adopts a data-centric pipeline architecture, and its interaction with TinySphere follows a client-server model, initially supporting centrally trained models but designed with future on-device adaptation in mind. The selection of the Raspberry Pi Zero 2W, an \gls{sbc}, for the empirical evaluation also aligns with the observed trend of using more capable, yet still constrained, hardware for complex \gls{tinyml} tasks.
+
+\paragraph{RQ2: Which frameworks and strategies facilitate decentralized on-device \gls{mlops} while minimizing reliance on cloud infrastructure?}
+Chapter~\ref{chp:Research_Results} also addressed this question by identifying and categorizing existing frameworks and strategies that support aspects of decentralized on-device \gls{mlops}, such as on-device learning, model adaptation, and \gls{ota} updates. Findings are highlighted in Chapter~\ref{chp:Research_Results} (\ref{sec:RQ2_Results_Frameworks}). The analysis highlighted a growing momentum towards greater on-device intelligence. However, it also revealed a degree of fragmentation, with many solutions focusing on specific aspects of \gls{mlops} rather than providing a comprehensive, integrated on-device \gls{lcm} solution. This identified gap underscored the need for a framework like \gls{tinylcm}, which aims for broader on-device \gls{lcm} coverage, and a \gls{tinyml}-aware server backend like TinySphere to support these autonomous devices in a cohesive manner.
+
+\paragraph{RQ3: How can a \gls{tinymlops} framework be designed to enable effective on-device model \gls{lcm} in resource-constrained systems?}
+This question is the central design challenge of the thesis and is primarily answered by the conceptual design of the \gls{tinylcm} and TinySphere ecosystem presented in Chapter~\ref{chp:Framework}. The proposed solution involves \gls{tinylcm}'s modular architecture with components for feature processing, lightweight classification, unsupervised drift detection, state management for rollbacks, and a conceptual mechanism for heuristic-based on-device adaptation. TinySphere complements this with server-side capabilities for data aggregation, validation, and fleet management. The effectiveness of this design in enabling on-device \gls{lcm} is partially demonstrated by the successful empirical validation of \gls{tinylcm}'s drift detection and its performance within resource constraints (Chapter~\ref{chp:Evaluation} ).
+
+\paragraph{RQ4: How does deploying on-device TinyMLOps in decentralized embedded systems influence deployment complexity, resource consumption, and performance trade-offs?}
+The empirical evaluation detailed in Chapter~\ref{chp:Evaluation} provides direct answers to this question regarding the \gls{tinylcm} framework.
+Deployment Complexity: The exemplary workflow (Phase 2 in Section~\ref{ssec:ecosystem_workflow}) outlines a deployment process involving device preparation, automated installation via scripts, and configuration file management. While this process can be streamlined, it still entails multiple steps, indicating a moderate level of initial deployment complexity.
+The evaluation confirmed that \gls{tinylcm} operates within acceptable resource limits on a Raspberry Pi Zero 2W. The inference latency overhead introduced by \gls{tinylcm} components was below the 50\% threshold relative to baseline \gls{tfl} inference (Hypothesis H$_1$ accepted). The latency breakdown revealed that feature extraction and \gls{knn} classification are the primary contributors to this overhead. The observed mean inference latency of approximately 420-436 ms (around 2.3 frames per second) is suitable for some near real-time applications but may be a limiting factor for others requiring faster responses. This highlights a fundamental trade-off: the valuable capability of on-device intelligence (specifically, unsupervised drift detection) comes at a quantifiable computational cost, which \gls{tinylcm} is designed to manage within the constraints of platforms like \glspl{sbc}.
+
+The systematic progression from understanding the problem domain (RQ1, RQ2 via literature analysis), to designing an artifact (RQ3 via framework development), and finally to evaluating that artifact (RQ4 via empirical testing) clearly reflects the \gls{dsr} methodology outlined in Chapter~\ref{chp:Research_Design}. This structured approach ensures that the proposed framework is not only theoretically grounded but also practically assessed, with findings from each stage informing the next.
+
+\subsection{Significance of the Findings}
+\label{ssec:significance_findings}
+
+The research findings carry several significant implications for the field of \gls{tinymlops}.
+Firstly, the work contributes to advancing the feasibility of more autonomous \gls{tinyml} systems. The design of \gls{tinylcm}, demonstrates a practical pathway towards reducing the reliance of edge devices on continuous network connectivity and cloud-based intervention for core monitoring tasks. This is especially relevant for applications in remote or challenging environments, such as the motivating Mars rover scenario, where autonomy is paramount. By enabling devices to locally sense and react to changes in their operational context, this research helps extend the reach of data-driven methods to settings previously constrained by connectivity limitations.
+
+Secondly, the \gls{tinylcm} framework offers a practical approach for on-device monitoring in label-scarce environments. The successful validation of its unsupervised drift detection mechanism provides a tangible tool for an important \gls{mlops} phase.
+
+Thirdly, the conceptualization of TinySphere provides a blueprint for TinyML-centric server-side support. Instead of merely adapting generic cloud \gls{mlops} tools, TinySphere is envisioned as a platform specifically designed to interact with, manage, and augment fleets of autonomous \gls{tinyml} devices. This addresses a noted gap for server infrastructure that understands the unique data streams and operational modes of such edge systems.
+
+Finally, the empirical performance benchmarks obtained from evaluating \gls{tinylcm} on a Raspberry Pi Zero 2W offer concrete data points for the research community and practitioners. These benchmarks provide valuable insights into the tangible costs and capabilities associated with implementing on-device \gls{mlops} features on representative \gls{sbc} hardware.
+
+Beyond these direct technical contributions, the overarching significance lies in potentially enabling new classes of \gls{tinyml} applications or enhancing existing ones. As stated in the introduction, \gls{tinyml} aims to bring intelligence to the very edge, to devices limited by power, connectivity, or form factor. A framework that enhances the operational autonomy and resilience of these devices, by allowing them to manage their \gls{ml} models more self-sufficiently, directly supports this goal.
+
+\subsection{Comparison with Broader Literature and Framework Claims}
+\label{ssec:comparison_literature_claims}
+
+The research presented in this thesis aligns with the broader trend identified in the literature (Chapter~\ref{chp:Research_Results}) towards greater on-device intelligence and more edge-native \gls{mlops} capabilities. The proposed ecosystem specifically endeavors to address certain gaps.
+
+When evaluating the claims made for the framework in Chapter~\ref{chp:Framework} :
+
+\begin{itemize}
+    \item \textit{\gls{tinylcm} enables autonomous \gls{lcm}:} This claim is partially met. The empirical evaluation demonstrated autonomous unsupervised drift detection. The design includes mechanisms for state management and rollback. However, the on-device adaptation component, crucial for fully autonomous \gls{lcm}, remains conceptual and was not empirically validated for its autonomous learning capabilities.
+    
+    \item \textit{Minimal cloud reliance:} This claim is largely met for \gls{tinylcm}'s core operational loop, particularly for monitoring. Interaction with TinySphere is designed to be opportunistic, allowing \gls{tinylcm} to function independently.
+    
+    \item \textit{Suitable for resource-constrained devices:} The empirical evaluation was conducted on a Raspberry Pi Zero 2W. While this demonstrates feasibility on such platforms, the direct applicability and performance of the current Python-based \gls{tinylcm} implementation on more severely constrained \gls{mcu}s (typically programmed in C/C++) are not directly proven by this evaluation. While \gls{tfl} can target \gls{mcu}s, porting the entire \gls{tinylcm} Python framework would require significant effort and likely reimplementation. This distinction needs to be carefully considered when assessing suitability across the full spectrum of \gls{tinyml} hardware. 
+\end{itemize}
+
+\section{Limitations of the Research}
+\label{sec:limitations_research}
+
+While this research contributes to the field of \gls{tinymlops}, it is important to acknowledge its inherent limitations, which span the methodological approach, the design of the proposed framework, and the scope of its empirical evaluation.
+
+The \gls{dsr} methodology, while well-suited for developing and evaluating novel artifacts such as the TinyMLOps ecosystem, has practical constraints within the confines of a thesis. The iterative design, implementation, and evaluation cycles may not achieve the same depth or breadth as a larger, long-term research project. For example, the initial exploration of the problem space could potentially have benefited from a wider range of inputs or alternative framings to further enrich the understanding of requirements. Furthermore, the literature review process, which combined \gls{sms} and \gls{slr} techniques as detailed in Chapter~\ref{chp:Research_Design}, is subject to the common limitations of such reviews. These include the potential for selection bias in the chosen databases or search terms, the risk of overlooking relevant grey literature, and the inherent subjectivity in the interpretation and synthesis of selected studies, despite efforts to maintain rigor through predefined protocols and criteria.
+
+The conceptual design of the TinyMLOps ecosystem, also has limitations. The on-device heuristic adaptation mechanisms within \gls{tinylcm}, designed for autonomous learning and concept drift response, are largely conceptual at this stage. While the architectural groundwork and component interactions were defined, the specific algorithms for pseudo-label generation and their robust, resource-efficient implementation on diverse \glspl{mcu} were not fully realized or empirically tested. This means that the framework's capacity for fully autonomous, unsupervised adaptation in complex, real-world scenarios remains an area for substantial future development and validation. Similarly, TinySphere's capabilities for processing and validating data originating from these advanced on-device adaptations are, by extension, also based on this conceptual foundation. Although TinySphere integrates established MLOps tools like MLflow and provides a structured approach to TinyML-specific data, the complete end-to-end feedback loop involving sophisticated server-side validation of on-device heuristic learning and subsequent automated model refinement on the edge device has not been fully implemented and evaluated.
+
+The empirical evaluation of the \gls{tinylcm} framework, as presented in Chapter~\ref{chp:Evaluation}, was conducted under controlled laboratory conditions using a Raspberry Pi Zero 2W as the target platform. While this setup allowed for reproducible measurements of performance overhead and a qualitative assessment of drift detection efficacy, its external validity is constrained. The results may not directly generalize to the wide variety of even more resource-constrained \glspl{mcu} or to different application domains with diverse data characteristics and operational demands. The specific ``drift'' objects used were visually distinct, and the framework's performance on more subtle or gradual concept drift types was not exhaustively tested. Additionally, while the performance overhead was found to be acceptable against predefined thresholds, the absolute latency on the Raspberry Pi Zero 2W might be too high for applications requiring very fast real-time responses.

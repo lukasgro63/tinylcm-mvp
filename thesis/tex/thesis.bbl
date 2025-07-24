@@ -1,0 +1,291 @@
+\begin{thebibliography}{10}
+
+\bibitem{alselekAgileAIFirmware2024}
+Mohammad AlSelek, Jose~M. {Alcaraz-Calero}, and Qi~Wang.
+\newblock Agile {{AI}} and {{Firmware Management}} in {{IoT}}: {{DevOps}} for {{Low-Power Microcontroller-Based Platforms}}.
+\newblock In {\em 2024 9th {{International Conference}} on {{Smart}} and {{Sustainable Technologies}} ({{SpliTech}})}, pages 1--6, June 2024.
+
+\bibitem{alselekDynamicAIIoTEnabling2024}
+Mohammad AlSelek, Jose~M. {Alcaraz-Calero}, and Qi~Wang.
+\newblock Dynamic {{AI-IoT}}: {{Enabling Updatable AI Models}} in {{Ultralow-Power 5G IoT Devices}}.
+\newblock {\em IEEE Internet of Things Journal}, 11(8):14192--14205, April 2024.
+
+\bibitem{antoniniTinyMLOpsFrameworkOrchestrating2022}
+Mattia Antonini, Miguel Pincheira, Massimo Vecchio, and Fabio Antonelli.
+\newblock Tiny-{{MLOps}}: A framework for orchestrating {{ML}} applications at the far edge of {{IoT}} systems.
+\newblock In {\em 2022 {{IEEE International Conference}} on {{Evolving}} and {{Adaptive Intelligent Systems}} ({{EAIS}})}, pages 1--8, May 2022.
+
+\bibitem{azevedoDetectingFaceMasks2023a}
+Mariana~B. Azevedo, Tha{\'i}s de~A. {de Medeiros}, Morsinaldo de~A. Medeiros, Ivanovitch Silva, and Daniel~G. Costa.
+\newblock Detecting face masks through embedded machine learning algorithms: {{A}} transfer learning approach for affordable microcontrollers.
+\newblock {\em Machine Learning with Applications}, 14:100498, December 2023.
+
+\bibitem{banburyEdgeImpulseMLOps2023}
+Colby Banbury, Vijay Janapa~Reddi, Alexander Elium, Shawn Hymel, David Tischler, Daniel Situnayake, Carl Ward, Louis Moreau, Jenny Plunkett, Matthew Kelcey, Mathijs Baaijens, Alessandro Grande, Dmitry Maslov, Arthur Beavis, Jan Jongboom, and Jessica Quaye.
+\newblock Edge {{Impulse}}: {{An MLOps Platform}} for {{Tiny Machine Learning}}.
+\newblock {\em Proceedings of Machine Learning and Systems}, 5:254--268, March 2023.
+
+\bibitem{banburyBenchmarkingTinyMLSystems2021}
+Colby~R. Banbury, Vijay~Janapa Reddi, Max Lam, William Fu, Amin Fazel, Jeremy Holleman, Xinyuan Huang, Robert Hurtado, David Kanter, Anton Lokhmotov, David Patterson, Danilo Pau, Jae-sun Seo, Jeff Sieracki, Urmish Thakker, Marian Verhelst, and Poonam Yadav.
+\newblock Benchmarking {{TinyML Systems}}: {{Challenges}} and {{Direction}}, January 2021.
+
+\bibitem{brancoMachineLearningResourceScarce2019}
+S{\'e}rgio Branco, Andr{\'e}~G. Ferreira, and Jorge Cabral.
+\newblock Machine {{Learning}} in {{Resource-Scarce Embedded Systems}}, {{FPGAs}}, and {{End-Devices}}: {{A Survey}}.
+\newblock {\em Electronics}, 8(11):1289, November 2019.
+
+\bibitem{burgueno-romeroOpenSourceMLOps2025}
+Antonio~M. {Burgue{\~n}o-Romero}, Antonio {Ben{\'i}tez-Hidalgo}, Crist{\'o}bal {Barba-Gonz{\'a}lez}, and Jos{\'e}~F. {Aldana-Montes}.
+\newblock Toward an {{Open Source MLOps Architecture}}.
+\newblock {\em IEEE Software}, 42(1):59--64, January 2025.
+
+\bibitem{capogrossoMachineLearningOrientedSurvey2024}
+Luigi Capogrosso, Federico Cunico, Dong~Seon Cheng, Franco Fummi, and Marco Cristani.
+\newblock A {{Machine Learning-Oriented Survey}} on {{Tiny Machine Learning}}.
+\newblock {\em IEEE Access}, 12:23406--23426, 2024.
+
+\bibitem{changSurveyRecentAdvances2021}
+Zhuoqing Chang, Shubo Liu, Xingxing Xiong, Zhaohui Cai, and Guoqing Tu.
+\newblock A {{Survey}} of {{Recent Advances}} in {{Edge-Computing-Powered Artificial Intelligence}} of {{Things}}.
+\newblock {\em IEEE Internet of Things Journal}, 8(18):13849--13875, September 2021.
+
+\bibitem{condeEnhancedFIWAREBasedArchitecture2024}
+Javier Conde, Andr{\'e}s {Munoz-Arcentales}, {\'A}lvaro Alonso, Joaqu{\'i}n Salvach{\'u}a, and Gabriel Huecas.
+\newblock Enhanced {{FIWARE-Based Architecture}} for {{Cyberphysical Systems With Tiny Machine Learning}} and {{Machine Learning Operations}}: {{A Case Study}} on {{Urban Mobility Systems}}.
+\newblock {\em IT Professional}, 26(5):55--61, September 2024.
+
+\bibitem{davidTensorFlowLiteMicro2021}
+Robert David, Jared Duke, Advait Jain, Vijay Janapa~Reddi, Nat Jeffries, Jian Li, Nick Kreeger, Ian Nappier, Meghna Natraj, Tiezhen Wang, Pete Warden, and Rocky Rhodes.
+\newblock {{TensorFlow Lite Micro}}: {{Embedded Machine Learning}} for {{TinyML Systems}}.
+\newblock {\em Proceedings of Machine Learning and Systems}, 3:800--811, March 2021.
+
+\bibitem{demaghSensOLMemoryEfficientOnline2024}
+Lokmane Demagh, Patrick Garda, Cedric Gilbert, and Khalil Hachicha.
+\newblock {{SensOL}}: {{Memory-Efficient Online Learning}} for {{Tiny MCUs}}.
+\newblock In {\em 2024 {{IEEE SENSORS}}}, pages 1--4, October 2024.
+
+\bibitem{disabatoIncrementalOnDeviceTiny2020}
+Simone Disabato and Manuel Roveri.
+\newblock Incremental {{On-Device Tiny Machine Learning}}.
+\newblock In {\em Proceedings of the 2nd {{International Workshop}} on {{Challenges}} in {{Artificial Intelligence}} and {{Machine Learning}} for {{Internet}} of {{Things}}}, {{AIChallengeIoT}} '20, pages 7--13, New York, NY, USA, November 2020. Association for Computing Machinery.
+
+\bibitem{disabatoTinyMachineLearning2024}
+Simone Disabato and Manuel Roveri.
+\newblock Tiny {{Machine Learning}} for {{Concept Drift}}.
+\newblock {\em IEEE Transactions on Neural Networks and Learning Systems}, 35(6):8470--8481, June 2024.
+
+\bibitem{doyuTinyMLaaSEcosystemMachine2021}
+Hiroshi Doyu, Roberto Morabito, and Martina Brachmann.
+\newblock A {{TinyMLaaS Ecosystem}} for {{Machine Learning}} in {{IoT}}: {{Overview}} and {{Research Challenges}}.
+\newblock In {\em 2021 {{International Symposium}} on {{VLSI Design}}, {{Automation}} and {{Test}} ({{VLSI-DAT}})}, pages 1--5, April 2021.
+
+\bibitem{duttaTinyMLMeetsIoT2021}
+Dr.~Lachit Dutta and Swapna Bharali.
+\newblock {{TinyML Meets IoT}}: {{A Comprehensive Survey}}.
+\newblock {\em Internet of Things}, 16:100461, December 2021.
+
+\bibitem{fraidlingTinyMachineLearning2023}
+Florens Fraidling, Christian Hochreiter, Ferdinand Heinrich, Florian Rieger, and Franz Wenninger.
+\newblock Tiny {{Machine Learning Sensor Platform}} for {{Local Sensor Data Fusion}} and {{Evaluation}}.
+\newblock In {\em {{MikroSystemTechnik Kongress}} 2023; {{Kongress}}}, pages 714--721, October 2023.
+
+\bibitem{gamaSurveyConceptDrift2014}
+Jo{\~a}o Gama, Indr{\.e} {\v Z}liobait{\.e}, Albert Bifet, Mykola Pechenizkiy, and Abdelhamid Bouchachia.
+\newblock A survey on concept drift adaptation.
+\newblock {\em ACM Computing Surveys}, 46(4):1--37, April 2014.
+
+\bibitem{gillEdgeAITaxonomy2024}
+Sukhpal~Singh Gill, Muhammed Golec, Jianmin Hu, Minxian Xu, Junhui Du, Huaming Wu, Guneet~Kaur Walia, Subramaniam~Subramanian Murugesan, Babar Ali, Mohit Kumar, Kejiang Ye, Prabal Verma, Surendra Kumar, Felix Cuadrado, and Steve Uhlig.
+\newblock Edge {{AI}}: {{A Taxonomy}}, {{Systematic Review}} and {{Future Directions}}.
+\newblock {\em Cluster Computing}, 28(1):18, October 2024.
+
+\bibitem{grauOnDeviceTrainingMachine2021}
+Marc~Monfort Grau, Roger~Pueyo Centelles, and Felix Freitag.
+\newblock On-{{Device Training}} of {{Machine Learning Models}} on {{Microcontrollers With}} a {{Look}} at {{Federated Learning}}.
+\newblock In {\em Proceedings of the {{Conference}} on {{Information Technology}} for {{Social Good}}}, {{GoodIT}} '21, pages 198--203, New York, NY, USA, September 2021. Association for Computing Machinery.
+
+\bibitem{gulatiTDMiLTinyDistributed2024}
+Mayank Gulati, Koen Zandberg, Zhaolan Huang, Gerhard Wunder, Cedric Adjih, and Emmanuel Baccelli.
+\newblock {{TDMiL}}: {{Tiny Distributed Machine Learning}} for {{Microcontroller-Based Interconnected Devices}}.
+\newblock {\em IEEE Access}, 12:167810--167826, 2024.
+
+\bibitem{huangRIOTMLToolkitOvertheair2024a}
+Zhaolan Huang, Koen Zandberg, Kaspar Schleiser, and Emmanuel Baccelli.
+\newblock {{RIOT-ML}}: Toolkit for over-the-air secure updates and performance evaluation of {{TinyML}} models.
+\newblock {\em Annals of Telecommunications}, May 2024.
+
+\bibitem{immonenTinyMachineLearning2022}
+Riku Immonen and Timo H{\"a}m{\"a}l{\"a}inen.
+\newblock Tiny {{Machine Learning}} for {{Resource-Constrained Microcontrollers}}.
+\newblock {\em Journal of Sensors}, 2022(1):7437023, 2022.
+
+\bibitem{johnMLOpsFrameworkMaturity2021}
+Meenu~Mary John, Helena~Holmstr{\"o}m Olsson, and Jan Bosch.
+\newblock Towards {{MLOps}}: {{A Framework}} and {{Maturity Model}}.
+\newblock In {\em 2021 47th {{Euromicro Conference}} on {{Software Engineering}} and {{Advanced Applications}} ({{SEAA}})}, pages 1--8, September 2021.
+
+\bibitem{jolliffePrincipalComponentAnalysis2016}
+Ian~T. Jolliffe and Jorge Cadima.
+\newblock Principal component analysis: A review and recent developments.
+\newblock {\em Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}, 374(2065):20150202, April 2016.
+
+\bibitem{karamitsosApplyingDevOpsPractices2020}
+Ioannis Karamitsos, Saeed Albarhami, and Charalampos Apostolopoulos.
+\newblock Applying {{DevOps Practices}} of {{Continuous Automation}} for {{Machine Learning}}.
+\newblock {\em Information}, 11(7):363, July 2020.
+
+\bibitem{kitchenhamGuidelinesPerformingSystematic2007}
+Barbara Kitchenham and Stuart Charters.
+\newblock Guidelines for performing {{Systematic Literature Reviews}} in {{Software Engineering}}.
+\newblock 2, January 2007.
+
+\bibitem{kreuzbergerMachineLearningOperations2023}
+Dominik Kreuzberger, Niklas K{\"u}hl, and Sebastian Hirschl.
+\newblock Machine {{Learning Operations}} ({{MLOps}}): {{Overview}}, {{Definition}}, and {{Architecture}}.
+\newblock {\em IEEE Access}, 11:31866--31879, 2023.
+
+\bibitem{kwonLifeLearnerHardwareAwareMeta2023}
+Young~D. Kwon, Jagmohan Chauhan, Hong Jia, Stylianos~I. Venieris, and Cecilia Mascolo.
+\newblock {{LifeLearner}}: {{Hardware-Aware Meta Continual Learning System}} for {{Embedded Computing Platforms}}.
+\newblock In {\em Proceedings of the 21st {{ACM Conference}} on {{Embedded Networked Sensor Systems}}}, pages 138--151, Istanbul Turkiye, November 2023. ACM.
+
+\bibitem{leTinyMLOpsRealtimeUltralow2023a}
+Minh~Tri L{\^e} and Julyan Arbel.
+\newblock {{TinyMLOps}} for real-time ultra-low power {{MCUs}} applied to frame-based event classification.
+\newblock In {\em Proceedings of the 3rd {{Workshop}} on {{Machine Learning}} and {{Systems}}}, {{EuroMLSys}} '23, pages 148--153, New York, NY, USA, May 2023. Association for Computing Machinery.
+
+\bibitem{lerouxTinyMLOpsOperationalChallenges2022a}
+Sam Leroux, Pieter Simoens, Meelis Lootus, Kartik Thakore, and Akshay Sharma.
+\newblock {{TinyMLOps}}: {{Operational Challenges}} for {{Widespread Edge AI Adoption}}.
+\newblock In {\em 2022 {{IEEE International Parallel}} and {{Distributed Processing Symposium Workshops}} ({{IPDPSW}})}, pages 1003--1010, May 2022.
+
+\bibitem{linMCUNetTinyDeep2020a}
+Ji~Lin, Wei-Ming Chen, Yujun Lin, john {cohn}, Chuang Gan, and Song Han.
+\newblock {{MCUNet}}: {{Tiny Deep Learning}} on {{IoT Devices}}.
+\newblock In {\em Advances in {{Neural Information Processing Systems}}}, volume~33, pages 11711--11722. Curran Associates, Inc., 2020.
+
+\bibitem{linTinyMachineLearning2024}
+Tzu-Hsuan Lin, Chien-Ta Chang, and Alan Putranto.
+\newblock Tiny machine learning empowers climbing inspection robots for real-time multiobject bolt-defect detection.
+\newblock {\em Engineering Applications of Artificial Intelligence}, 133:108618, July 2024.
+
+\bibitem{lootusVMContainerizedApproach2022}
+Meelis Lootus, Kartik Thakore, Sam Leroux, Geert Trooskens, Akshay Sharma, and Holly Ly.
+\newblock A {{VM}}/{{Containerized Approach}} for {{Scaling TinyML Applications}}.
+\newblock Research Symposium, February 2022.
+
+\bibitem{minSensiXBringingMLOps2023}
+Chulhong Min, Akhil Mathur, Utku~G{\"u}nay Acer, Alessandro Montanari, and Fahim Kawsar.
+\newblock {{SensiX}}++: {{Bringing MLOps}} and {{Multi-tenant Model Serving}} to {{Sensory Edge Devices}}.
+\newblock {\em ACM Trans. Embed. Comput. Syst.}, 22(6):98:1--98:27, November 2023.
+
+\bibitem{moskalenkoResilienceawareMLOpsResourceconstrained2023}
+Viacheslav Moskalenko, Alona Moskalenko, and Anton Kudryavtsev.
+\newblock Resilience-aware {{MLOps}} for resource-constrained {{AI-}} system.
+\newblock 2023.
+
+\bibitem{pageContinuousInspectionSchemes1954}
+E.~S. Page.
+\newblock Continuous {{Inspection Schemes}}.
+\newblock {\em Biometrika}, 41(1/2):100--115, 1954.
+
+\bibitem{pavanTyBoxAutomaticDesign2024}
+Massimo Pavan, Eugeniu Ostrovan, Armando Caltabiano, and Manuel Roveri.
+\newblock {{TyBox}}: {{An Automatic Design}} and {{Code Generation Toolbox}} for {{TinyML Incremental On-Device Learning}}.
+\newblock {\em ACM Transactions on Embedded Computing Systems}, 23(3):1--27, May 2024.
+
+\bibitem{peffersDesignScienceResearch2012}
+Ken Peffers, Marcus Rothenberger, Tuure Tuunanen, and Reza Vaezi.
+\newblock Design {{Science Research Evaluation}}.
+\newblock In Ken Peffers, Marcus Rothenberger, and Bill Kuechler, editors, {\em Design {{Science Research}} in {{Information Systems}}. {{Advances}} in {{Theory}} and {{Practice}}}, pages 398--410, Berlin, Heidelberg, 2012. Springer.
+
+\bibitem{peltonenLinkEdgeOpensourcedMLOps2023}
+Ella Peltonen and Savidu Dias.
+\newblock {{LinkEdge}}: {{Open-sourced MLOps Integration}} with {{IoT Edge}}.
+\newblock In {\em Proceedings of the 3rd {{Eclipse Security}}, {{AI}}, {{Architecture}} and {{Modelling Conference}} on {{Cloud}} to {{Edge Continuum}}}, {{eSAAM}} '23, pages 67--76, New York, NY, USA, October 2023. Association for Computing Machinery.
+
+\bibitem{petersenGuidelinesConductingSystematic2015}
+Kai Petersen, Sairam Vakkalanka, and Ludwik Kuzniarz.
+\newblock Guidelines for conducting systematic mapping studies in software engineering: {{An}} update.
+\newblock {\em Information and Software Technology}, 64:1--18, August 2015.
+
+\bibitem{rajEdgeMLOpsAutomation2021}
+Emmanuel Raj, David Buffoni, Magnus Westerlund, and Kimmo Ahola.
+\newblock Edge {{MLOps}}: {{An Automation Framework}} for {{AIoT Applications}}.
+\newblock In {\em 2021 {{IEEE International Conference}} on {{Cloud Engineering}} ({{IC2E}})}, pages 191--200, October 2021.
+
+\bibitem{rayReviewTinyMLStateoftheart2022}
+Partha~Pratim Ray.
+\newblock A review on {{TinyML}}: {{State-of-the-art}} and prospects.
+\newblock {\em Journal of King Saud University - Computer and Information Sciences}, 34(4):1595--1623, April 2022.
+
+\bibitem{renOndeviceOnlineLearning2024}
+Haoyu Ren, Darko Anicic, Xue Li, and Thomas Runkler.
+\newblock On-device {{Online Learning}} and {{Semantic Management}} of {{TinyML Systems}}.
+\newblock {\em ACM Trans. Embed. Comput. Syst.}, 23(4):55:1--55:32, June 2024.
+
+\bibitem{shapiroAnalysisVarianceTest}
+S~S Shapiro and M~B Wilk.
+\newblock An {{Analysis}} of {{Variance Test}} for {{Normality}} ({{Complete Samples}}).
+
+\bibitem{sudharsanEdge2TrainFrameworkTrain2020}
+Bharath Sudharsan, John~G. Breslin, and Muhammad~Intizar Ali.
+\newblock {{Edge2Train}}: A framework to train machine learning models ({{SVMs}}) on resource-constrained {{IoT}} edge devices.
+\newblock In {\em Proceedings of the 10th {{International Conference}} on the {{Internet}} of {{Things}}}, pages 1--8, Malm{\"o} Sweden, October 2020. ACM.
+
+\bibitem{sudharsanOTATinyMLAirDeployment2022}
+Bharath Sudharsan, John~G. Breslin, Mehreen Tahir, Muhammad Intizar~Ali, Omer Rana, Schahram Dustdar, and Rajiv Ranjan.
+\newblock {{OTA-TinyML}}: {{Over}} the {{Air Deployment}} of {{TinyML Models}} and {{Execution}} on {{IoT Devices}}.
+\newblock {\em IEEE Internet Computing}, 26(3):69--78, May 2022.
+
+\bibitem{sudharsanTrainIncrementalML2021}
+Bharath Sudharsan, Piyush Yadav, John~G. Breslin, and Muhammad Intizar~Ali.
+\newblock Train++: {{An Incremental ML Model Training Algorithm}} to {{Create Self-Learning IoT Devices}}.
+\newblock In {\em 2021 {{IEEE SmartWorld}}, {{Ubiquitous Intelligence}} \& {{Computing}}, {{Advanced}} \& {{Trusted Computing}}, {{Scalable Computing}} \& {{Communications}}, {{Internet}} of {{People}} and {{Smart City Innovation}} ({{SmartWorld}}/{{SCALCOM}}/{{UIC}}/{{ATC}}/{{IOP}}/{{SCI}})}, pages 97--106, October 2021.
+
+\bibitem{szydloManagementTinyMLEnabled2024}
+Tomasz Szydlo and Marcin Nagy.
+\newblock Management of {{TinyML Enabled Internet}} of {{Things Devices}}.
+\newblock {\em IEEE Micro}, pages 1--7, 2024.
+
+\bibitem{tekinReviewOndeviceMachine2024}
+Nazli Tekin, Ahmet Aris, Abbas Acar, Selcuk Uluagac, and Vehbi~Cagri Gungor.
+\newblock A review of on-device machine learning for {{IoT}}: {{An}} energy perspective.
+\newblock {\em Ad Hoc Networks}, 153:103348, February 2024.
+
+\bibitem{testiMLOpsTaxonomyMethodology2022}
+Matteo Testi, Matteo Ballabio, Emanuele Frontoni, Giulio Iannello, Sara Moccia, Paolo Soda, and Gennaro Vessio.
+\newblock {{MLOps}}: {{A Taxonomy}} and a {{Methodology}}.
+\newblock {\em IEEE Access}, 10:63606--63618, 2022.
+
+\bibitem{tsoukasReviewEmergingTechnology2024}
+Vasileios Tsoukas, Anargyros Gkogkidis, Eleni Boumpa, and Athanasios Kakarountas.
+\newblock A {{Review}} on the emerging technology of {{TinyML}}.
+\newblock {\em ACM Computing Surveys}, 56(10):1--37, October 2024.
+
+\bibitem{vombrockeIntroductionDesignScience2020}
+Jan {vom Brocke}, Alan Hevner, and Alexander Maedche.
+\newblock Introduction to {{Design Science Research}}.
+\newblock In Jan {vom Brocke}, Alan Hevner, and Alexander Maedche, editors, {\em Design {{Science Research}}. {{Cases}}}, pages 1--13. Springer International Publishing, Cham, 2020.
+
+\bibitem{wieringaRequirementsEngineeringPaper2006}
+Roel Wieringa, Neil Maiden, Nancy Mead, and Colette Rolland.
+\newblock Requirements engineering paper classification and evaluation criteria: A proposal and a discussion.
+\newblock {\em Requirements Engineering}, 11(1):102--107, March 2006.
+
+\bibitem{wohlinGuidelinesSnowballingSystematic2014a}
+Claes Wohlin.
+\newblock Guidelines for snowballing in systematic literature studies and a replication in software engineering.
+\newblock In {\em Proceedings of the 18th {{International Conference}} on {{Evaluation}} and {{Assessment}} in {{Software Engineering}}}, pages 1--10, London England United Kingdom, May 2014. ACM.
+
+\bibitem{wohlinExperimentationSoftwareEngineering2024}
+Claes Wohlin, Per Runeson, Martin H{\"o}st, Magnus~C. Ohlsson, Bj{\"o}rn Regnell, and Anders Wessl{\'e}n.
+\newblock {\em Experimentation in {{Software Engineering}}}.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2024.
+
+\bibitem{zaidiUnlockingEdgeIntelligence2022}
+Syed Ali~Raza Zaidi, Ali~M. Hayajneh, Maryam Hafeez, and Q.~Z. Ahmed.
+\newblock Unlocking {{Edge Intelligence Through Tiny Machine Learning}} ({{TinyML}}).
+\newblock {\em IEEE Access}, 10:100867--100877, 2022.
+
+\end{thebibliography}

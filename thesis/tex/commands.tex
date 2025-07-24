@@ -1,0 +1,126 @@
+%%%
+%%% Own commands and environments
+%%%
+
+% page clearing
+\newcommand{\clearemptydoublepage}{%
+  \ifthenelse{\boolean{@twoside}}{\newpage{\pagestyle{empty}\cleardoublepage}}%
+  {\clearpage}}
+
+%% color definition
+%  red, green, blue, white, and black come from color.sty
+\definecolor{brightgray}{gray}{0.9}
+\definecolor{darkgray}{gray}{0.5}
+\definecolor{darkgreen}{rgb}{0.0,0.5,0.0}
+\definecolor{dg}{rgb}{0.0,0.5,0.0}  %% dark green (comments in listings)
+\definecolor{dr}{rgb}{0.5,0.0,0.0}  %% dark red
+
+%% Re-formatting paragraph spacing
+%  Paragrpahs have 0pt indent, but are now
+%  vertically separated
+\setlength\parskip{\smallskipamount}
+\setlength\parindent{0pt}
+
+%% Re-definition Typewriter Font = smaller font size (more harmonic text) and hyphenation support
+\renewcommand\texttt[1]{\small\ttfamily\hyphenchar\font=\defaulthyphenchar #1{}\normalsize\rmfamily\hyphenchar\font=\defaulthyphenchar}
+
+%% definition of standard listing font
+\lstset{language=csharp,extendedchars=true,basicstyle=\footnotesize\ttfamily,commentstyle=\itshape,breaklines=true}
+
+%% Easy switch between different programming languages
+%  and the font, which is used to type set the listing
+%  Parameter:
+%  1: Name of the language, e.g., csharp
+%  2: Name of the font family, e.g., \ttfamity
+%  3: Name of the font family for comments, e.g., \itshape
+%
+%  Beispiel: \setlistingstyle{csharp}{\ttfamily}{\itshape}
+\newcommand{\setlistingstyle}[3]{%
+\lstset{language=#1,extendedchars=true,basicstyle=\footnotesize#2,commentstyle=#3,breaklines=true}
+}
+
+%% Redet type setting of listig to the standard values
+%  
+\newcommand{\resetlistingstyle}{%
+\lstset{language=csharp,extendedchars=true,basicstyle=\footnotesize\ttfamily,commentstyle=\itshape,breaklines=true}
+}
+
+%% Re-definition: Formats and fonts for caption labels
+\addtokomafont{caption}{\sffamily\small}
+\setkomafont{captionlabel}{\sffamily\bfseries}
+\setkomafont{descriptionlabel}{\sffamily\bfseries\small}
+
+%% Outline \part is type set without prefix, i.e. "Part"
+\renewcommand*{\partformat}{\thepart\autodot}
+\deffootnote{1em}{1em}{\thefootnotemark\ }
+
+%% New theorems
+\newtheoremstyle{style}
+   {}                   %Space above
+   {}                   %Space below
+   {}                   %Body font: original {\normalfont}
+   {}                   %Indent amount (empty = no indent,
+                           %\parindent = para indent)
+   {\normalfont\sffamily}  %Thm head font original {\normalfont\bfseries}
+   {:}                     %Punctuation after thm head original :
+   {\newline}              %Space after thm head: " " = normal interword
+                           %space; \newline = linebreak
+   {\textbf{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}}                    
+                                        %Thm head spec (can be left empty, meaning
+                           %`normal') original {\underline{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}}
+ 
+\theoremstyle{style} 
+\newtheorem{defi}{Definition}[chapter]
+\newtheorem{bsp}{Example}[chapter]
+
+%% type set font: small + sans serif
+\newcommand{\textsmf}[1]{\small{\textsf{#1}}}
+%\newcommand{\hl}[1]{\textsf{#1}}
+
+\newcommand{\hl}[1]{\small\sffamily\bfseries\hyphenchar\font=\defaulthyphenchar #1{}\normalsize\rmfamily\mdseries\hyphenchar\font=\defaulthyphenchar}
+
+%% type set font: emphasized + sans serif
+\newcommand{\textei}[1]{\emph{\textsf{#1}}}
+
+%% New environments:
+%  MySample: Environment for inline examples that are highlighted:
+%            different font face and adjusted indents
+\newenvironment{MySample}{%
+  \begin{labeling}[:]{%
+      \usekomafont{descriptionlabel}Sample}
+  \item[\usekomafont{descriptionlabel}Sample]\usekomafont{caption}
+    }{%
+    \normalfont \end{labeling}
+}
+
+%  MySugg: Environment for inline hints/suggestions that are highlighted:
+%          different font face and adjusted indents
+\newenvironment{MySugg}{%
+  \begin{labeling}[:]{%
+      \usekomafont{descriptionlabel}Hint}
+  \item[\usekomafont{descriptionlabel}Hint]\usekomafont{caption}
+    }{%
+    \normalfont \end{labeling}
+}
+
+
+%% MyBox: Environment for emphasized text. Different font face,
+%         adjusted coloring, and adjusted indents.
+\newenvironment{MyBox}[1]{%
+    \color{darkgray}%
+    \rule{\linewidth}{1pt}%
+    \color{black}%
+    \usekomafont{descriptionlabel}
+    \textcolor{darkgray}{{#1}}
+
+    \begin{addmargin}[2em]{0pt}%
+    \usekomafont{caption}%
+}{%
+  \end{addmargin}%
+  \color{darkgray}%
+  \rule[.5\baselineskip]{\linewidth}{1pt}%
+  \normalfont%
+}
+
+%% verbatin in footnode
+\VerbatimFootnotes

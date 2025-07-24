@@ -1,0 +1,319 @@
+
+\tolerance 500   % suppresses moaning "`overfull \hbox"'.
+
+\documentclass[11pt,english,a4paper,normalheadings,twoside,DIV9,BCOR10mm,listsleft,fleqn,leqno,abstracton,pointlessnumbers]{scrbook}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% These are the variables to configure the produced PDF file. Please
+%% fill them out properly.
+\def\university {Reutlingen University}						%% name the university here
+\def\faculty {School of Informatics | Herman Hollerith Center}	%% and, also name the faculty
+\def\titelname {Master-Thesis-Grodmeier}									%% name of the PDF document; in
+													%% in the simple case, just use
+													%% the thesis's title
+\def\autorforinfo {Lukas Grodmeier}					%% name of the author of this document
+\def\studentid{810112}				%% provide your Student Id
+\def\email {lukas.grodmeier@student.reutlingen-university.de}			%% your e-mail address
+\def\subjectname {TinyMLops}				%% please indicate, what the
+									%% general area of your work is
+\def\keywordsname {TinyMLops, TinyML, Life-Cycle-Management}	%% add a comma-separated list of
+									%% of keywords to help document
+									%% indexing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Specific variables for the Thesis:
+
+% What is the thesis's type, BSc, MSc, etc.; don't forget the subject...
+% For example, if you are going to write a Bachelor Thesis in DIB, just use the specification below.
+% If you are doing a Masters Thesis, e.g., in DBE, just change the line below accordingly...
+\def\doctype{Master Thesis in Digital Business Engineering (M.Sc.)}
+%  What is the title of the thesis?
+\def\title{On-Device MLOps: A Framework for Embedded Machine Learning in Resource-Constrained Systems}
+%  Who are you?
+\def\author{Lukas Grodmeier}
+\def\studId{810112}
+%  What is the hand-in date of the thesis?
+\def\handindate{June 13, 2025}
+%  Who is supervising you?
+\def\firstSupervisor{Prof. Dr. Marco Kuhrmann}
+\def\secondSupervisor{Prof. Dr. Christian Decker}
+
+%% Selection of the AI utilization in this thesis: From the following three options, select this one
+%% that applies. Use the comment function to enable the required option and to disable those
+%% options that don't apply
+
+% Option 1: No use of AI tools. 
+%\def\AIToolsUse{I also confirm that I have not used any AI-based, content-generating tools.}
+
+% Option 2: Mandatory labeling of AI tools with permitted use 
+\def\AIToolsUse{I also confirm that the use of AI tools has been explicitly permitted by the examiner and that I have made use of them in my work. The AI tools used are attached to the thesis in accordance with the faculty's internal citation and documentation requirements. I only used content-generating AI tools for support and did not let the AI take over the core theses of my work. I am aware that the use of AI tools does not guarantee accuracy and that I am responsible for all AI-generated content in this thesis.}
+
+% Option 3: Permission of content-generating AI tools without mandatory labeling 
+%\def\AIToolsUse{I also confirm that I have only used content-generating AI tools in a supportive manner and have not allowed the AI to take over the core theses of my work. I am aware that the use of AI tools does not guarantee accuracy and that I am responsible for all AI-generated content in this thesis.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% definition of the document metric - DON'T CHANGE!!!
+\usepackage[inner=2.5cm,outer=3cm,top=1cm,bottom=1cm,includeheadfoot]{geometry}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsbsy}
+\usepackage{babel}
+\usepackage{paralist}
+
+\usepackage{xspace}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% import of the packages for nice tables
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{everysel}
+\usepackage{framed}
+\usepackage{ragged2e}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% include the minitoc-package to generate fancy section TOC's
+\usepackage{shorttoc}
+\usepackage{minitoc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% definition of scaling table columns - requires the table packages
+%% imported before
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}%
+\newcolumntype{C}{>{\Centering\arraybackslash}X}%
+\newcolumntype{R}{>{\RaggedLeft\arraybackslash}X}%
+
+%% own
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+
+
+\newcommand{\opentableheader}{\toprule}
+\newcommand{\closetableheader}{\toprule}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% actual versions of the listings package:
+%% ftp://ftp.dante.de/tex-archive/help/Catalogue/entries/listings.html
+\usepackage{listings}
+\usepackage{dotnet_new}
+
+%% own packages
+\usepackage[acronym]{glossaries} 
+\input{acronyms}
+\usepackage{subcaption}
+\usepackage{pdflscape}
+\usepackage{multirow}
+\usepackage[binary-units]{siunitx}
+\usepackage{enumitem}
+\usepackage{amsmath,amssymb}
+\usepackage{algorithm}
+\usepackage{caption}
+\usepackage{placeins}
+\usepackage{pifont}
+\usepackage{algpseudocode}
+
+% ---------- Glossaries-Konfiguration ----------
+\setacronymstyle{long-short}     % erste Nennung: Langform (Kurzform)
+\makeglossaries
+% ----------------------------------------------
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% configuration of the PDF file behavior
+\usepackage[
+    pdftex,
+    plainpages=false,  % <<< ADD THIS
+    pdfpagelabels,     % <<< ADD THIS
+    colorlinks,
+    linkcolor=black,
+    citecolor=black,
+    pagecolor=black,    % Note: 'pagecolor' is not a standard hyperref option for link colors.
+                        % It might be from another package or a custom definition.
+                        % Hyperref's main link types are link, cite, file, url.
+    filecolor=black,
+    urlcolor=black
+]{hyperref}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% further useful packages
+\usepackage{graphicx}
+\usepackage{bibgerm}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{longtable}
+\usepackage[final]{pdfpages}
+\usepackage{paralist}
+\usepackage{fancyvrb} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% use the Koma Script page styles
+\usepackage{scrlayer-scrpage}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% adjust font and shape of section headings...
+\setkomafont{section}{\large\sffamily}
+\setkomafont{subsection}{\normalfont\sffamily}
+\setkomafont{subsubsection}{\normalfont\sffamily}
+\setkomafont{paragraph}{\normalfont\bfseries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% adjust the description environment behavior
+\setkomafont{descriptionlabel}{\normalfont\bfseries}
+\setkomafont{labelinglabel}{\normalfont\bfseries}
+\setkomafont{labelingseparator}{\normalfont}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% self-defined packages
+\input{shortcuts}
+\input{commands}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% some information for acrobat reader
+\pdfinfo{%
+%  /Title (\titelname)
+  /Author (\autorforinfo)
+  /Subject (\subjectname)
+  /Keywords (\keywordsname)
+}
+\clearscrplain
+
+%% end of preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Note! In the following, the basic structure and layout of the 
+%% document is configured. You don't need to change anything. Basically,
+%% your task is to add your chapters to the thesis. The hotspot is
+%% highlighted in the configuration below...
+%%
+%% IF YOU CHANGE ANYTHING, IT'S ON YOUR OWN RISK!!!
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% beginning of document
+\begin{document}
+\pagestyle{scrplain}
+
+%\frontmatter
+%% You don't need this for Thesis documents in Reutlingen/Boeblingen as
+%% as you have to provide an explicit cover and badge anyways...
+%\input{cover.tex}
+%\clearemptydoublepage
+
+\input{titlepage.tex}
+\input{disclaimer.tex}
+\input{acknowledgements.tex}
+
+%% NOTE: by default, the template only addresses English abstracts. An English
+%% abstract is mandatory, regardless if the the thesis is German or English. If
+%% you need to provide a German ``Zusammenfassung'', just add a Zusammenfassung
+%% right in this file.
+\input{abstract.tex}
+
+\clearscrplain
+
+%% table of contents
+\pagenumbering{roman}\setcounter{page}{1}
+\clearscrheadfoot
+\ohead{\headmark}
+\ofoot[\pagemark]{\pagemark}
+\automark*[section]{}
+
+%% configuration of the minitocs
+\dominitoc
+\setcounter{minitocdepth}{3}
+\mtcsettitle{minitoc}{Chapter Overview}
+\mtcsettitlefont{minitoc}{\large\sffamily}
+\mtcsetfont{minitoc}{*}{\sffamily}
+\mtcsetfont{minitoc}{section}{\normalfont}
+\mtcsetfont{minitoc}{subsection}{\normalfont}
+\mtcsetfont{minitoc}{subsubsection}{\normalfont}
+
+%% generation of all table of [contents|figures|tables|listing]
+%% if you don't need, e.g., listing, just remove the respective
+%% commands (or make them comments)
+%%
+%% generate the table of contents
+\tableofcontents
+\vfill
+\cleardoublepage
+
+%% generate the table of figures
+\listoffigures
+\cleardoublepage
+
+%% generelle the table of tables
+\listoftables
+\cleardoublepage
+
+%% generate the table of listings
+\lstlistoflistings
+\cleardoublepage
+
+%% clean up page formats to start the document's main body text
+\clearscrheadfoot
+\ohead{\headmark}
+\ofoot[\pagemark]{\pagemark}
+\automark*[section]{}
+\renewcommand{\headfont}{\normalfont\sffamily\slshape}
+\renewcommand{\pnumfont}{\normalfont\sffamily}
+
+\renewcommand{\baselinestretch}{1.05}\normalsize
+
+\pagestyle{scrheadings}
+\pagenumbering{arabic}\setcounter{page}{1}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Text: Content
+%% This is the place where you include your chapters. Use one file per
+%% chapter and include it right here using the \input command as shown
+%% in the example...
+
+\input{chap01_Introduction.tex}
+\input{chap02_Related_Background.tex}
+\input{chap03_Research_Desing.tex}
+\input{chap04_Research_Results.tex}
+\input{chap05_Framework.tex}
+\input{chap06_Evaluation.tex}
+\input{chap07_Discussion.tex}
+\input{chap08_Conclusion.tex}
+\input{chap09_Future_Work.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Text: Appendix
+%% If your thesis contains an appendix, uncomment the lines below. The
+%% appendix file will be treated like ''ordinary'' chapters...
+
+\printglossary[type=\acronymtype,title=Acronyms]
+
+\appendix
+\input{chap_appenindex.tex}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Bibliography
+
+%\nocite{*}
+%\bibliographystyle{geralpha}
+\bibliographystyle{plain}
+\bibliography{thesis}
+%\bibliography{bibtex}
+\vfill
+%\pagebreak
+
+\end{document}

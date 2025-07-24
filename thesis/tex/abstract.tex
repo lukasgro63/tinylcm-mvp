@@ -1,0 +1,22 @@
+%!TEX root = thesis.tex
+
+% Abstract for the thesis report document
+% Included by MAIN.TEX
+
+\clearemptydoublepage
+\phantomsection
+%\addcontentsline{toc}{chapter}{Abstract}	
+
+
+\vspace*{2cm}
+{\Large \bf Abstract}
+\vspace{1cm}
+
+This work addresses the critical challenge of managing \gls{ml} models on resource-constrained embedded systems, known as \gls{tinyml}. Traditional \gls{mlops} paradigms are ill-suited, and the common reliance on cloud infrastructure for monitoring, retraining, and deployment curtails device autonomy, especially where network connectivity is limited or non-existent. This necessitates a cohesive framework for autonomous on-device \gls{ml} \gls{lcm}. 
+
+Employing a \gls{dsr} methodology, this research involved a \gls{sms} as well as characteristics of a \gls{slr} to identify practices and gaps in \gls{tinymlops}. Findings revealed a nascent field dominated by solution proposals for more capable \glspl{mcu}, often using centralized training and static models, but with a growing trend towards on-device intelligence. Key gaps include comprehensive on-device \gls{lcm} and robust, resource-aware monitoring for adaptive systems.
+Based on these insights, a novel two-component \gls{tinymlops} ecosystem was designed and developed: \gls{tinylcm} and TinySphere. \gls{tinylcm} is an ``autonomy-first'' on-device Python framework for autonomous \gls{ml} model execution, monitoring, and (conceptually) adaptation, using \gls{tfl}. It features unsupervised drift detection by monitoring \gls{knn} feature-space distances with the Page-Hinkley test. TinySphere is an optional, synergistic server-side platform for enhanced \gls{mlops}, including fleet management, advanced analytics, and human-in-the-loop validation of on-device events.
+
+Empirical evaluation of \gls{tinylcm} on a Raspberry Pi Zero 2W focused on performance overhead and drift detection capabilities. Findings confirmed that \gls{tinylcm} operates within acceptable \gls{cpu} and memory limits, with latency increases below a 50\% threshold compared to baseline \gls{tfl} inference. Feature extraction (including base model inference) was the primary latency contributor (81--84\%), while the drift check mechanism itself added minimal overhead ($<$2\%). The framework demonstrated functional unsupervised drift detection, with alarms correlating temporally with the presentation of untrained objects.
+
+This research contributes a initially empirically validated \gls{tinymlops} ecosystem that enhances operational autonomy for \gls{tinyml} devices. It provides a foundation for developing more autonomous \gls{tinyml} systems, with future work focused on realizing the on-device adaptation concepts and broader empirical studies.

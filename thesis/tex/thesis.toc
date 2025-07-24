@@ -1,0 +1,109 @@
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Problem}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Research Objectives}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Contribution}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Outline}{3}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Background and Related Work}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Background}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}MLOps}{6}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Resource-Constrained Systems}{6}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}TinyML}{7}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Related Work}{8}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Research Design}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Methodological Approach}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Research Objectives and Questions}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Literature Analysis Process}{13}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Data Collection}{13}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Application of Selection Criteria}{14}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Snowballing}{14}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Data Extraction}{14}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Data Synthesis}{15}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Framework Evaluation Methodology}{16}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Evolution of the Experimental Design}{16}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Experimental Design}{17}{subsection.3.4.2}%
+\contentsline {paragraph}{\nonumberline Evaluation Objectives}{17}{paragraph*.14}%
+\contentsline {paragraph}{\nonumberline Experiment Hypotheses}{17}{paragraph*.16}%
+\contentsline {paragraph}{\nonumberline Experimental Setup and Configuration}{17}{paragraph*.18}%
+\contentsline {paragraph}{\nonumberline Experimental Phases and Scenarios}{18}{paragraph*.21}%
+\contentsline {paragraph}{\nonumberline Data Collection, Metrics, and Analysis Plan}{18}{paragraph*.24}%
+\contentsline {paragraph}{\nonumberline Hypothesis Testing for Performance (H$_1$ and H$_2$)}{18}{paragraph*.26}%
+\contentsline {paragraph}{\nonumberline Hypothesis Testing for Drift Detection (H$_3$)}{19}{paragraph*.29}%
+\contentsline {subsection}{\numberline {3.4.3}Threats to Validity}{19}{subsection.3.4.3}%
+\contentsline {chapter}{\numberline {4}Results}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}General Analysis of the Literature Corpus}{22}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Quantitative Findings from Primary Studies}{22}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Research and Contribution Type}{23}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Hardware Platforms and Runtime Environments}{23}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}AI Use Cases and Data Modalities}{24}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}System Architecture Patterns}{26}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Model Training and Lifecycle Management}{26}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}Mapping Studies of Interdependencies}{28}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Interplay of Architecture, Hardware, and Model Training}{28}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Interplay of Architecture, Training, and Model Management}{29}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Interplay of Management, Learning, and Monitoring}{31}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Interplay of CI/CD, Training, and Optimization}{32}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Mapping Hardware Platforms to AI Use Cases}{34}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}System Architectures in TinyML}{35}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Centralized and Hybrid Architectural Models}{37}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Decentralized and Edge-Native Architectural Models}{37}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Frameworks and Tools for On-Device MLOps}{38}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Identified Frameworks for Decentralized On-Device MLOps}{38}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Commonly Utilized Standard Tools and Libraries}{40}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Core Contributions and Strategies for Decentralized MLOps}{40}{subsection.4.5.3}%
+\contentsline {paragraph}{\nonumberline End-to-End Platforms and Orchestration Frameworks}{40}{paragraph*.47}%
+\contentsline {paragraph}{\nonumberline Enabling On-Device Intelligence: Learning, Adaptation, and Optimization}{41}{paragraph*.49}%
+\contentsline {paragraph}{\nonumberline Deployment, Operational Management, and System Resilience}{41}{paragraph*.51}%
+\contentsline {section}{\numberline {4.6}Concluding Synthesis of Research Findings}{41}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Conceptual Design of a TinyMLOps Ecosystem}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Motivation and Design Rationale}{44}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Revisiting Research Gaps and Limitations}{44}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Objectives and Core Tenets for the Ecosystem}{44}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}System Requirements and Architectural Vision}{45}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Functional and Non-Functional Requirements}{45}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Overall Ecosystem Architecture}{45}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}TinyLCM On-Device Framework for Autonomous Lifecycle Management}{47}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Architectural Blueprint and Core Components}{48}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Lightweight KNN Classifier}{49}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Autonomous Drift Detection and Adaptation Mechanisms}{51}{subsection.5.3.3}%
+\contentsline {paragraph}{\nonumberline KNN-Distance Monitoring with Page-Hinkley Test}{51}{paragraph*.57}%
+\contentsline {paragraph}{\nonumberline Heuristic Pseudo-Labeling and Quarantine}{53}{paragraph*.59}%
+\contentsline {paragraph}{\nonumberline State Management for Resilience}{54}{paragraph*.62}%
+\contentsline {section}{\numberline {5.4}TinySphere: A TinyML-Centric Server Platform for Enhanced MLOps}{55}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Rationale and Objectives for a TinyML-Centric MLOps Platform}{55}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Architectural Design of TinySphere}{56}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Key MLOps Capabilities Provided by TinySphere}{57}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Exemplary Operational Workflow}{59}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Evaluation of the Framework}{63}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Experimental Setup Implementation}{64}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Phase 1 – Performance Overhead Assessment}{64}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Resource Utilization and Inference Latency}{64}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Hypothesis Testing (H$_1$ and H$_2$)}{65}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Latency Breakdown}{67}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Phase 2 – Drift Detection Validation}{69}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Drift Alarm Timelines}{69}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Quantitative Analysis and Hypothesis Testing (H$_3$)}{69}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}Cross-Phase Discussion of Results}{71}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Result-Level Threats to Validity}{72}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Discussion}{73}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Evaluating the TinyMLOps Ecosystem}{74}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Philosophy and Architectural Design}{74}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Effectiveness in Key Lifecycle Management Phases}{74}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Comparison with Existing TinyMLOps Solutions}{75}{subsection.7.1.3}%
+\contentsline {section}{\numberline {7.2}Critical Examination of Research Findings}{75}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Addressing the Research Questions}{75}{subsection.7.2.1}%
+\contentsline {paragraph}{\nonumberline RQ1: What system architectures, methodologies, and practices are employed to support \gls {tinyml} in resource-constrained embedded systems?}{75}{paragraph*.81}%
+\contentsline {paragraph}{\nonumberline RQ2: Which frameworks and strategies facilitate decentralized on-device \gls {mlops} while minimizing reliance on cloud infrastructure?}{76}{paragraph*.83}%
+\contentsline {paragraph}{\nonumberline RQ3: How can a \gls {tinymlops} framework be designed to enable effective on-device model \gls {lcm} in resource-constrained systems?}{76}{paragraph*.85}%
+\contentsline {paragraph}{\nonumberline RQ4: How does deploying on-device TinyMLOps in decentralized embedded systems influence deployment complexity, resource consumption, and performance trade-offs?}{76}{paragraph*.87}%
+\contentsline {subsection}{\numberline {7.2.2}Significance of the Findings}{77}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Comparison with Broader Literature and Framework Claims}{77}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}Limitations of the Research}{78}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Conclusion}{81}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Future Work}{83}{chapter.9}%
+\contentsline {chapter}{\numberline {A}Appendix}{87}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Detailed AI Use Cases in TinyML Research}{87}{section.A.1}%
+\contentsline {section}{\numberline {A.2}CI/CD Tactics and Optimization Techniques in TinyMLOps}{87}{section.A.2}%
+\contentsline {section}{\numberline {A.3}H1 and H2 Evalauation Time Series Data}{89}{section.A.3}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

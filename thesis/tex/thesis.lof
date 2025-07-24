@@ -1,0 +1,55 @@
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\contentsline {xchapter}{Introduction}{1}{chapter.1}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Background and Related Work}{5}{chapter.2}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Research Design}{11}{chapter.3}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Research Methodology Overview}}{12}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Systematic Literature Review Process Overview}}{13}{figure.caption.8}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Results}{21}{chapter.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Temporal and thematic analysis of \gls {tinymlops} research.}}{22}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Research and Contribution Type Distribution}}{23}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Hardware platforms and runtime environments in \gls {tinymlops} implementations.}}{25}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces AI applications and input data types in \gls {tinymlops} research.}}{25}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Distribution of system architecture patterns}}{26}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Training approaches and lifecycle management in \gls {tinymlops}.}}{27}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Mapping of System Architecture, Hardware, and Training}}{28}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Mapping of System Architecture, Training, and Management}}{30}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Mapping of Model Management, Learning, and Monitoring}}{31}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Mapping of CI/CD Tactics, Training, and Optimization}}{33}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Mapping of Hardware Platforms to AI Use Cases}}{34}{figure.caption.43}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Conceptual Design of a TinyMLOps Ecosystem}{43}{chapter.5}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces High-Level System Context Diagram of the TinyMLOps Ecosystem}}{47}{figure.caption.54}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Component Diagram of the TinyLCM Core Library}}{48}{figure.caption.55}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Activity Diagram of the Heuristic Adaptation Process}}{53}{figure.caption.60}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Architectural Design of the TinySphere Server Platform}}{57}{figure.caption.63}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Package Processing Pipeline in TinySphere}}{58}{figure.caption.64}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Drift Validation Workflow in TinySphere}}{59}{figure.caption.65}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces User Interface of TinySphere}}{60}{figure.caption.66}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Illustrative mockups of TinySphere User Interface components}}{62}{figure.caption.67}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Evaluation of the Framework}{63}{chapter.6}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Photograph of the Controlled Experimental Setup}}{64}{figure.caption.68}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Boxplot Analysis of Aggregated Performance Metrics}}{65}{figure.caption.70}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Histograms and Kernel Density Estimates of Aggregated Performance Metrics}}{66}{figure.caption.71}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Drift Prediction Timeline for Scenario S1 (Dual Drift)}}{69}{figure.caption.75}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Drift Images from S1 (Dual Drift)}}{70}{figure.caption.76}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Drift Prediction Timeline for Scenario S2 (Single Drift)}}{70}{figure.caption.77}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Drift Image of Scenario 2 (Single Drift)}}{70}{figure.caption.78}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Discussion}{73}{chapter.7}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Conclusion}{81}{chapter.8}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Future Work}{83}{chapter.9}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Appendix}{87}{appendix.A}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Detailed AI Use Case Distribution}}{87}{figure.caption.90}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Latency Comparison}}{89}{figure.caption.92}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Memory Comparison}}{89}{figure.caption.93}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces CPU Comparison}}{90}{figure.caption.94}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

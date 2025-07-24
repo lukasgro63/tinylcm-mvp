@@ -1,0 +1,10 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.1}Experimental Setup Implementation}{\reset@font\mtcSfont 64}{section.6.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.2}Phase 1 – Performance Overhead Assessment}{\reset@font\mtcSfont 64}{section.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.2.1}Resource Utilization and Inference Latency}{\reset@font\mtcSSfont 64}{subsection.6.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.2.2}Hypothesis Testing (H$_1$ and H$_2$)}{\reset@font\mtcSSfont 65}{subsection.6.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.2.3}Latency Breakdown}{\reset@font\mtcSSfont 67}{subsection.6.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.3}Phase 2 – Drift Detection Validation}{\reset@font\mtcSfont 69}{section.6.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.1}Drift Alarm Timelines}{\reset@font\mtcSSfont 69}{subsection.6.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.2}Quantitative Analysis and Hypothesis Testing (H$_3$)}{\reset@font\mtcSSfont 69}{subsection.6.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.4}Cross-Phase Discussion of Results}{\reset@font\mtcSfont 71}{section.6.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.5}Result-Level Threats to Validity}{\reset@font\mtcSfont 72}{section.6.5}}
